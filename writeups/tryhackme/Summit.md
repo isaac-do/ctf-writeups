@@ -23,7 +23,7 @@ After participating in one too many incident response activities, PicoSecure has
 
 # Challenge
 ---
-**What is the first flag you receive after successfully detecting sample1.exe?**
+## What is the first flag you receive after successfully detecting sample1.exe?
 ![](../../attachments/attachment-03112026.png)
 At the most basic level of the Pyramid of Pain, malware hash values are very easy for malicious actors to operate around because they can generate a completely new hash with only minor changes to the file.
 In this email, we received our first sample malware called `sample1.exe.` 
@@ -42,7 +42,7 @@ By blocking the MD5 hash of the malware, we are forcing the malicious actors to 
 
 Submit the hash to receive the flag.
 
-**What is the second flag you receive after successfully detecting sample2.exe?**
+## What is the second flag you receive after successfully detecting sample2.exe?
 ![](../../attachments/attachment-03112026-5.png)
 > Note: The flag received in this email is for the previous question.
 
@@ -65,7 +65,7 @@ By creating a firewall rule to block the IP address associated with the attack, 
 
 Save the rule to receive the flag.
 
-**What is the third flag you receive after successfully detecting sample3.exe?**
+## What is the third flag you receive after successfully detecting sample3.exe?
 ![](../../attachments/attachment-03112026-8.png)
 > Note: The flag received in this email is for the previous question.
 
@@ -89,7 +89,7 @@ By creating a DNS rule to block the malicious domain `emudyn.bresonicz.info`, de
 
 Save the rule to receive the flag.
 
-**What is the fourth flag you receive after successfully detecting sample4.exe?**
+## What is the fourth flag you receive after successfully detecting sample4.exe?
 ![](../../attachments/attachment-03112026-11.png)
 > Note: The flag received in this email is for the previous question.
 
@@ -114,7 +114,7 @@ By creating a registry modification detection rule to monitor changes to the reg
 
 Validate the rule to retrieve the flag.
 
-**What is the fifth flag you receive after successfully detecting sample5.exe?**
+## What is the fifth flag you receive after successfully detecting sample5.exe?
 ![](../../attachments/attachment-03112026-17.png)
 > Note: The flag received in this email is for the previous question.
 
@@ -144,7 +144,7 @@ By creating a detection rule that identifies regular outbound connections with s
 
 Validate the rule to retrieve the flag.
 
-**What is the final flag you receive from Sphinx?**
+## What is the final flag you receive from Sphinx?
 ![](../../attachments/attachment-03112026-21.png)
 > Note: The flag received in this email is for the previous question.
 
