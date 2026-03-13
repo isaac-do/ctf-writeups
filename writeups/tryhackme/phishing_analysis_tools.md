@@ -10,7 +10,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** Phishing Analysis  
 **Difficulty:** Easy  
-**Tools Used:** Any.Run, CyberChef, Google Messageheader, URLScan.io  
+**Tools Used:** Any.Run, CyberChef, Google Messageheader
 
 # Summary
 ---
@@ -35,10 +35,10 @@ You are a Level 1 SOC Analyst. Several suspicious emails have been forwarded to 
 Copy the header from the email message source.
 
 ![](../../attachments/attachment-03132026-4.png)  
-Paste the copied email header into Messageheader tool and run the analysis.
+Paste the copied email header into [Messageheader](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) tool and run the analysis.
 
 ### From what you can gather, what do you think will be a domain of interest? Defang the domain.
-Copy the entire email message source then head over to [Cyberchef](https://cyberchef.org)
+Copy the entire email message source then head over to [Cyberchef](https://cyberchef.org).
 
 ![](../../attachments/attachment-03132026-5.png)  
 Paste in the contents of the email message and use the Extract Domains operation.
