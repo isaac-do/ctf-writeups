@@ -8,7 +8,7 @@ tags:
 ---
 # Challenge Overview
 ---
-**Challenge:** [Campfire-2](https://app.hackthebox.com/sherlocks/Campfire-2?tab=play_sherlock)
+**Challenge:** [Campfire-2](https://app.hackthebox.com/sherlocks/Campfire-2?tab=play_sherlock)  
 **Platform:** HackTheBox  
 **Category:** DFIR  
 **Difficulty:** Very Easy  
