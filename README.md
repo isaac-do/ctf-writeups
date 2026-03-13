@@ -30,13 +30,15 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Eviction    | [Link](writeups/tryhackme/eviction.md)     | [TryHackMe](https://tryhackme.com/room/eviction)                                     | Easy       | ⭐⭐     | `MITRE ATT&CK`              |
 | Dream Job-1 | [Link](writeups/hackthebox/dream_job-1.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock) | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` |
 
-### Phishing Analysis)
+### Phishing Analysis
 | Name                    | Writeup                                               | Challenge                                                                            | Difficulty | Rating | Tags                                                   |
 | ----------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------------------------ |
-| Phishing Analysis Tools | [Link](writeups/tryhackme/phishing_analysis_tools.md) | [TryHackMe](https://tryhackme.com/room/phishingemails3tryoe)                         | Easy       | ⭐⭐     | `Phishing Analysis` `CyberChef` `Any.Run` `URLScan.io` |
+| Phishing Analysis Tools | [Link](writeups/tryhackme/phishing_analysis_tools.md) | [TryHackMe](https://tryhackme.com/room/phishingemails3tryoe)                         | Easy       | ⭐⭐     | `Phishing Analysis` `CyberChef` `Any.Run` `Malware Analysis` |
 
 ### Tools
 | Tool | Category | Link |
 |-----|-----|-----|
 | MITRE ATT&CK | CTI | https://attack.mitre.org/ |
 | VirusTotal | CTI | https://www.virustotal.com/ |
+| Any.Run | Malware Analysis | https://any.run/ |
+| CyberChef | DFIR | https://gchq.github.io/CyberChef/ |
