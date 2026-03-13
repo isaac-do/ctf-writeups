@@ -9,7 +9,7 @@ tags:
 ---
 **Challenge:** [Eviction](https://tryhackme.com/room/eviction)  
 **Platform:** TryHackMe  
-**Category:** Threat Intelligence  
+**Category:** Cyber Threat Intelligence  
 **Difficulty:** Easy  
 **Tools Used:** MITRE ATT&CK  
 

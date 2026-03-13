@@ -10,7 +10,7 @@ tags:
 ---
 **Challenge:** [Dream Job-1](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock)  
 **Platform:** HackTheBox  
-**Category:** Threat Intelligence  
+**Category:** Cyber Threat Intelligence  
 **Difficulty:** Very Easy  
 **Tools Used:** MITRE ATT&CK, VirusTotal  
 
