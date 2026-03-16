@@ -9,7 +9,7 @@ tags:
 **Challenge:** [The Greenholt Phish](https://tryhackme.com/room/phishingemails5fgjlzxc)    
 **Platform:** TryHackMe  
 **Category:** Phishing Analysis  
-**Difficulty:**  Easy
+**Difficulty:**  Easy  
 **Tools Used:**  whois, VirusTotal
 
 # Summary
