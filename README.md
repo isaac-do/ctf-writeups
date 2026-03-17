@@ -36,7 +36,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Name        | Writeup                                    | Challenge                                                                            | Difficulty | Rating | Tags                        |
 | ----------- | ------------------------------------------ | ------------------------------------------------------------------------------------ | ---------- | ------ | --------------------------- |
 | Dev Diaries    | [Link](writeups/tryhackme/dev_diaries.md)     | [TryHackMe](https://tryhackme.com/room/devdiaries)                                     | Easy       | ⭐⭐     | `pentesting-tools` `GitHub` |
-| Missing Person | [Link](writeups/hackthebox/missing_person.md) | [TryHackMe](https://tryhackme.com/room/missingperson) | Easy       | ⭐⭐     | `Google Images` `exifmeta` |
+| Missing Person | [Link](writeups/tryhackme/missing_person.md) | [TryHackMe](https://tryhackme.com/room/missingperson) | Easy       | ⭐⭐     | `Google Images` `exifmeta` |
 
 ### Phishing Analysis
 | Name                    | Writeup                                               | Challenge                                                                            | Difficulty | Rating | Tags                                                   |
