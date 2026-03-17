@@ -52,7 +52,8 @@ I looked up the bar to find the full address.
 
 ## What is the DJ's stage name?
 ![](../../attachments/attachment-03172026-6.png)  
-
+https://www.facebook.com/surfersbarkutalombok/videos/get-ready-for-the-biggest-party-after-the-moto-gp-race%EF%B8%8F-sonday-5-october-2025-at/1447471409699330/  
+Watching the Facebook video posted by Surfers Bar revealed the DJ's stage name.  
 ## What is the name of the cave?
 ![](../../attachments/attachment-03172026-7.png)  
 I searched around the area of Surfer's Bar for caves.
