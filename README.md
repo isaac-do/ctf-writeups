@@ -15,6 +15,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ## Table of Contents
 - [DFIR](#dfir)
 - [Cyber Threat Intelligence (CTI)](#cyber-threat-intelligence-cti)
+- [Open-Source Intelligence (OSINT)](#open-source-intelligence-osint)
 - [Phishing Analysis](#phishing-analysis)
 - [Tools](#tools)
 
@@ -31,6 +32,12 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Eviction    | [Link](writeups/tryhackme/eviction.md)     | [TryHackMe](https://tryhackme.com/room/eviction)                                     | Easy       | ⭐⭐     | `MITRE ATT&CK`              |
 | Dream Job-1 | [Link](writeups/hackthebox/dream_job-1.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock) | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` |
 
+### Open-Source Intelligence (OSINT)
+| Name        | Writeup                                    | Challenge                                                                            | Difficulty | Rating | Tags                        |
+| ----------- | ------------------------------------------ | ------------------------------------------------------------------------------------ | ---------- | ------ | --------------------------- |
+| Dev Diaries    | [Link](writeups/tryhackme/dev_diaries.md)     | [TryHackMe](https://tryhackme.com/room/devdiaries)                                     | Easy       | ⭐⭐     | `pentesting-tools` `GitHub` |
+| Missing Person | [Link](writeups/hackthebox/missing_person.md) | [TryHackMe](https://tryhackme.com/room/missingperson) | Easy       | ⭐⭐     | `Google Images` `exifmeta` |
+
 ### Phishing Analysis
 | Name                    | Writeup                                               | Challenge                                                                            | Difficulty | Rating | Tags                                                   |
 | ----------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------------------------ |
@@ -46,3 +53,4 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | WhoIs | CTI | https://www.whois.com/whois/ |
 | Any.Run | Malware Analysis | https://any.run/ |
 | CyberChef | DFIR | https://gchq.github.io/CyberChef/ |
+| ExifMeta | OSINT | https://exifmeta.com/ |
