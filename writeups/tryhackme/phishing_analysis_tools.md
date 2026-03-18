@@ -10,7 +10,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** Phishing Analysis  
 **Difficulty:** Easy  
-**Tools Used:** Any.Run, CyberChef, Google Messageheader
+**Tools:** Any.Run, CyberChef, Google Messageheader
 
 # Summary
 ---

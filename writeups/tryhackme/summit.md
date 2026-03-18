@@ -11,7 +11,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** Log Analysis  
 **Difficulty:** Easy  
-**Tools Used:** MITRE ATT&CK, Pyramid of Pain  
+**Tools:** MITRE ATT&CK, Pyramid of Pain  
 
 # Summary
 ---
@@ -24,42 +24,46 @@ After participating in one too many incident response activities, PicoSecure has
 # Challenge
 ---
 ## What is the first flag you receive after successfully detecting sample1.exe?
-![](../../attachments/attachment-03112026.png)  
+
 At the most basic level of the Pyramid of Pain, malware hash values are very easy for malicious actors to operate around because they can generate a completely new hash with only minor changes to the file.  
 In this email, we received our first sample malware called `sample1.exe.`  
+![](../../attachments/attachment-03112026.png)  
 
-![](../../attachments/attachment-03112026-3.png)  
-![](../../attachments/attachment-03112026-1.png)  
 We will navigate to the Malware Sandbox to submit `sample1.exe` for analysis. Select `sample1.exe` as the file and submit for analysis.  
+![](../../attachments/attachment-03112026-3.png)  
+
 After the analysis completes, we can observe some useful information like all of the hashes for the malware.  
 Considering that this sample malware is not very sophisticated, we add the malware's MD5 hash to our hash blocklist to block the malware from executing.  
+![](../../attachments/attachment-03112026-1.png)  
 
-![](../../attachments/attachment-03112026-2.png)  
-![](../../attachments/attachment-03112026-4.png)  
+
+
 Navigate to "Manage Hashes" then select MD5 for the hash algorithm and paste in the hash value `cbda8ae000aa9cbe7c8b982bae006c2a` provided from the malware analysis scan.  
+![](../../attachments/attachment-03112026-2.png)  
 
 By blocking the MD5 hash of the malware, we are forcing the malicious actors to increase their effort by modifying/recompiling the malware to generate a new hash.  
+![](../../attachments/attachment-03112026-4.png)  
 
 Submit the hash to receive the flag.  
 
 ## What is the second flag you receive after successfully detecting sample2.exe?
-![](../../attachments/attachment-03112026-5.png)  
-> Note: The flag received in this email is for the previous question.
 
 Moving up the Pyramid of Pain, the next level involves detecting or blocking IP addresses associated with the attacker’s infrastructure.  
 In this email, the penetration tester increased malware sophistication and provided `sample2.exe`.  
+![](../../attachments/attachment-03112026-5.png)  
+> Note: The flag received in this email is for the previous question.
 
-![](../../attachments/attachment-03112026-6.png)  
 The sandbox analysis shows that `sample2.exe` initiates outbound network connection to `154.35.10.133:4444` shortly after execution. This indicates that the binary is attempting to communicate with an external system.  
 
 We can also observe that the binary establishes other network connections to `40.97.128.3:443` and `40.97.128.3:443` belonging to Microsoft Corporation. This may indicate the binary is performing connectivity checks or attempting to blend malicious traffic.  
+![](../../attachments/attachment-03112026-6.png)  
 
-![](../../attachments/attachment-03112026-7.png)  
 To prevent any network connections to the malicious IP address, navigate to the "Firewall Manager" and create a new firewall rule.  
 - Type will be `Egress` as we are targeting internal systems traffic to external systems.  
 - The source IP will be `Any` meaning the rule will apply to any internal systems.  
 - The destination IP will be the malicious IP address`154.35.10.113`.  
 - The action will be `Block` because we want to block any connection attempts to the malicious IP address.  
+![](../../attachments/attachment-03112026-7.png)  
 
 By creating a firewall rule to block the IP address associated with the attack, we force the malicious actors to change the network infrastructure used to communicate with compromised systems.  
 

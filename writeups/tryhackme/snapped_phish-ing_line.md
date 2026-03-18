@@ -10,7 +10,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** Phishing Analysis  
 **Difficulty:** Easy  
-**Tools Used:** VirusTotal, CyberChef, whois, grep, sha256sum
+**Tools:** VirusTotal, CyberChef, whois, grep, sha256sum
 
 # Summary
 ---

@@ -12,7 +12,7 @@ tags:
 **Platform:** HackTheBox  
 **Category:** DFIR  
 **Difficulty:** Very Easy  
-**Tools Used:** Event Viewer  
+**Tools:** Event Viewer  
 
 # Summary
 ---

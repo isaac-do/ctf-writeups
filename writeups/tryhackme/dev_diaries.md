@@ -10,7 +10,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** OSINT  
 **Difficulty:** Easy  
-**Tools Used:** pentest-tools.com, GitHub  
+**Tools:** pentest-tools.com, GitHub  
 
 # Summary
 ---
@@ -27,28 +27,33 @@ You are only given the website's primary domain as a starting point: marvenly.co
 # Challenge
 ---
 ## What is the subdomain where the development version of the website is hosted?
-![](../../attachments/attachment-03172026-10.png)  
+
 I used pentest-tools.com to enumerate the primary domain marvenly.com to find any sub-domains.  
+![](../../attachments/attachment-03172026-10.png)  
 
 ## What is the GitHub username of the developer?
-![](../../attachments/attachment-03172026-11.png)  
+
 Upon navigating to `uat-testing.marvenly.com`, if we scroll down we can see the name of the developer.  
+![](../../attachments/attachment-03172026-11.png)  
 
 ## What is the developer's email address?
-![](../../attachments/attachment-03172026-12.png)  
+
 Run a quick search on the developer's name to find the developer's Github profile.  
+![](../../attachments/attachment-03172026-12.png)   
 
-![](../../attachments/attachment-03172026-13.png)  
 Search through the notvibecoder123's repository to find marvenly_site and click on the latest commit ID.  
+![](../../attachments/attachment-03172026-13.png)  
 
-![](../../attachments/attachment-03172026-14.png)  
 In the URL, add `.patch` to the end of the URL and we obtain the developer's email address.  
+![](../../attachments/attachment-03172026-14.png)  
 
 ## What reason did the developer mention in the commit history for removing the source code?
-![](../../attachments/attachment-03172026-15.png)  
+
 Look in the commit history to find the reasoning for removing the source code.  
+![](../../attachments/attachment-03172026-15.png)  
 
 ## What is the value of the hidden flag?
+
+Digging through each of the commit, the specific commit ID `33c59e5` has the hidden flag.  
 ![](../../attachments/attachment-03172026-16.png)  
 ![](../../attachments/attachment-03172026-17.png)  
-Digging through each of the commit, the specific commit ID `33c59e5` has the hidden flag.  

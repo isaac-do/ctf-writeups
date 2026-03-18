@@ -11,7 +11,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** DFIR  
 **Difficulty:** Easy  
-**Tools Used:** FTK Imager  
+**Tools:** FTK Imager  
 
 # Summary
 ---

@@ -3,15 +3,15 @@ date: 2026-03-12
 tags:
   - mitre
   - tryhackme
-  - threat-intelligence
+  - threat-intel
 ---
 # Challenge Overview
 ---
 **Challenge:** [Eviction](https://tryhackme.com/room/eviction)  
 **Platform:** TryHackMe  
-**Category:** Cyber Threat Intelligence  
+**Category:** Threat Intel  
 **Difficulty:** Easy  
-**Tools Used:** MITRE ATT&CK  
+**Tools:** MITRE ATT&CK  
 
 # Summary
 ---

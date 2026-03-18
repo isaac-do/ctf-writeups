@@ -4,15 +4,15 @@ tags:
   - mitre
   - virustotal
   - hackthebox
-  - threat-intelligence
+  - threat-intel
 ---
 # Challenge Overview
 ---
 **Challenge:** [Dream Job-1](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock)  
 **Platform:** HackTheBox  
-**Category:** Cyber Threat Intelligence  
+**Category:** Threat Intel  
 **Difficulty:** Very Easy  
-**Tools Used:** MITRE ATT&CK, VirusTotal  
+**Tools:** MITRE ATT&CK, VirusTotal  
 
 # Summary
 ---

@@ -12,7 +12,7 @@ tags:
 **Platform:** HackTheBox  
 **Category:** DFIR  
 **Difficulty:** Very Easy  
-**Tools Used:** grep, cat, MITRE ATT&CK  
+**Tools:** grep, cat, MITRE ATT&CK  
 
 # Summary
 ---

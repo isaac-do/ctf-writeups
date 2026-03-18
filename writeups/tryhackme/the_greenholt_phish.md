@@ -10,7 +10,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** Phishing Analysis  
 **Difficulty:**  Easy  
-**Tools Used:**  whois, VirusTotal
+**Tools:**  whois, VirusTotal
 
 # Summary
 ---
