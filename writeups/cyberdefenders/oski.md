@@ -4,6 +4,7 @@ tags:
   - threat-intel
   - virustotal
   - any-run
+  - mitre
 ---
 # Challenge Overview
 ---
@@ -11,7 +12,7 @@ tags:
 **Platform:** CyberDefender  
 **Category:** Threat Intel  
 **Difficulty:** Easy  
-**Tools:** VirusTotal, Any.Run  
+**Tools:** MITRE ATT&CK, VirusTotal, Any.Run  
 
 # Summary
 ---
