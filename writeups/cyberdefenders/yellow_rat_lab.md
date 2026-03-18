@@ -5,7 +5,7 @@ tags:
 ---
 # Challenge Overview
 ---
-**Challenge:** [Yellow RAT](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)  
+**Challenge:** [Yellow RAT Lab](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)  
 **Platform:** CyberDefender  
 **Category:** Threat Intel  
 **Difficulty:** Easy  
@@ -13,7 +13,7 @@ tags:
 
 # Summary
 ---
-
+This lab involves using tools like VirusTotal and Red Canary to gather information on a malware.
 
 # Scenario
 ---
@@ -34,13 +34,23 @@ Navigate to the Details tab, then under the **Signature Info** section we can fi
 
 ## Determining the compilation timestamp of malware can reveal insights into its development and deployment timeline. What is the compilation timestamp of the malware that infected our network?
 
+Navigate to the Details tab, then under **Portable Executable Info** section we can find the malware's compilation timestamp.  
+![](../../attachments/attachment-03182026.png)  
 
 ## Understanding when the broader cybersecurity community first identified the malware could help determine how long the malware might have been in the environment before detection. When was the malware first submitted to VirusTotal?
 
+Navigate to the Details tab, then under **History** section we can find the malware's first submission timestamp.   
+![](../../attachments/attachment-03182026-1.png)  
 
 ## To completely eradicate the threat from Industries' systems, we need to identify all components dropped by the malware. What is the name of the .dat file that the malware dropped in the AppData folder?
 
+I was unable to find any relevant information regarding a `.dat` file dropped by the malware so I search `Yellow Cockatoo Malware` in Google to find more information.  
+![](../../attachments/attachment-03182026-2.png)  
+
+Using the Red Canary article, if we scroll down to the **Persistence** section we can observe a `.dat` file created by the malware.  
+![](../../attachments/attachment-03182026-3.png)  
 
 ## It is crucial to identify the C2 servers with which the malware communicates to block its communication and prevent further data exfiltration. What is the C2 server that the malware is communicating with?
 
-
+Scrolling down further in the Red Canary article, we can find the C2 server's address.  
+![](../../attachments/attachment-03182026-4.png)  

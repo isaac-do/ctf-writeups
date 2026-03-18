@@ -27,12 +27,12 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Brutus     | [Link](writeups/hackthebox/brutus.md)     | [HackTheBox](https://app.hackthebox.com/sherlocks/Brutus?tab=play_sherlock)     | Very Easy  | ⭐      | `grep` `cat` `MITRE ATT&CK` |
 
 ### Cyber Threat Intelligence (CTI)
-| Name        | Writeup                                    | Challenge                                                                            | Difficulty | Rating | Tags                        |
-| ----------- | ------------------------------------------ | ------------------------------------------------------------------------------------ | ---------- | ------ | --------------------------- |
-| Yellow RAT    | [Link](writeups/cyberdefenders/yellow_rat.md)     | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/) | Easy | ⭐⭐     | `VirusTotal` |
-| Oski    | [Link](writeups/cyberdefenders/oski.md)     | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/) | Easy | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.RUn` |
-| Eviction    | [Link](writeups/tryhackme/eviction.md)     | [TryHackMe](https://tryhackme.com/room/eviction) | Easy | ⭐⭐     | `MITRE ATT&CK` |
-| Dream Job-1 | [Link](writeups/hackthebox/dream_job-1.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock) | Easy | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` |
+| Name           | Writeup                                           | Challenge                                                                            | Difficulty | Rating | Tags                                  |
+| -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------- |
+| Yellow RAT Lab | [Link](writeups/cyberdefenders/yellow_rat_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)     | Easy       | ⭐⭐     | `VirusTotal`                          |
+| Oski Lab       | [Link](writeups/cyberdefenders/oski_lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)           | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.RUn` |
+| Eviction       | [Link](writeups/tryhackme/eviction.md)            | [TryHackMe](https://tryhackme.com/room/eviction)                                     | Easy       | ⭐⭐     | `MITRE ATT&CK`                        |
+| Dream Job-1    | [Link](writeups/hackthebox/dream_job-1.md)        | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock) | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal`           |
 
 ### Open-Source Intelligence (OSINT)
 | Name        | Writeup                                    | Challenge                                                                            | Difficulty | Rating | Tags                        |

@@ -8,7 +8,7 @@ tags:
 ---
 # Challenge Overview
 ---
-**Challenge:** [Oski](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)  
+**Challenge:** [Oski Lab](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)  
 **Platform:** CyberDefender  
 **Category:** Threat Intel  
 **Difficulty:** Easy  
@@ -16,7 +16,7 @@ tags:
 
 # Summary
 ---
-
+This lab involves using VirusTotal and Any.Run reports to gather information and analyze a malicious PPT file. 
 
 # Scenario
 ---
