@@ -5,6 +5,7 @@ tags:
   - virustotal
   - any-run
   - mitre
+  - cyberdefenders
 ---
 # Challenge Overview
 ---

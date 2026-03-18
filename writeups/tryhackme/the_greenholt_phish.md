@@ -3,6 +3,7 @@ date: 2026-03-16
 tags:
   - tryhackme
   - phishing-analysis
+  - virustotal
 ---
 # Challenge Overview
 ---

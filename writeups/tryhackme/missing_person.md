@@ -3,6 +3,7 @@ date: 2026-03-17
 tags:
   - osint
   - tryhackme
+  - google-images
 ---
 # Challenge Overview
 ---
@@ -10,7 +11,7 @@ tags:
 **Platform:** TryHackMe  
 **Category:** OSINT  
 **Difficulty:** Easy  
-**Tools:** Google Images, exifmeta  
+**Tools:** Google Image search, exifmeta  
 
 # Summary
 ---

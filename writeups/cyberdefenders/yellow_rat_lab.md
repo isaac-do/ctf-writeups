@@ -2,6 +2,9 @@
 date: 2026-03-17
 tags:
   - threat-intel
+  - cyberdefenders
+  - virustotal
+  - red-canary
 ---
 # Challenge Overview
 ---
