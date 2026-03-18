@@ -22,7 +22,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ### DFIR
 | Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
 | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
-| Summit     | [Link](writeups/tryhackme/summit.md)      | [TryHackMe](https://tryhackme.com/) | Easy | ⭐⭐     | `Log Analysis` `MITRE ATT&CK` `Pyramid of Pain` |
+| Summit     | [Link](writeups/tryhackme/summit.md)      | [TryHackMe](https://tryhackme.com/) | Easy | ⭐⭐     | `MITRE ATT&CK` `Pyramid of Pain` |
 | Campfire-2 | [Link](writeups/hackthebox/campfire-2.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Campfire-2?tab=play_sherlock) | Very Easy  | ⭐      | `Event Viewer` |
 | Brutus     | [Link](writeups/hackthebox/brutus.md)     | [HackTheBox](https://app.hackthebox.com/sherlocks/Brutus?tab=play_sherlock)     | Very Easy  | ⭐      | `grep` `cat` `MITRE ATT&CK` |
 
@@ -30,22 +30,23 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Name           | Writeup                                           | Challenge                                                                            | Difficulty | Rating | Tags                                  |
 | -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------- |
 | Yellow RAT Lab | [Link](writeups/cyberdefenders/yellow_rat_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)     | Easy       | ⭐⭐     | `VirusTotal`                          |
-| Oski Lab       | [Link](writeups/cyberdefenders/oski_lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)           | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.RUn` |
+| Oski Lab       | [Link](writeups/cyberdefenders/oski_lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)           | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.Run` |
 | Eviction       | [Link](writeups/tryhackme/eviction.md)            | [TryHackMe](https://tryhackme.com/room/eviction)                                     | Easy       | ⭐⭐     | `MITRE ATT&CK`                        |
 | Dream Job-1    | [Link](writeups/hackthebox/dream_job-1.md)        | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock) | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal`           |
 
 ### Open-Source Intelligence (OSINT)
 | Name        | Writeup                                    | Challenge                                                                            | Difficulty | Rating | Tags                        |
 | ----------- | ------------------------------------------ | ------------------------------------------------------------------------------------ | ---------- | ------ | --------------------------- |
+| Lespion Lab | [Link](writeups/cyberdefenders/lespion_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/lespion/)     | Easy       | ⭐⭐     | `Google Images search` `CyberChef` |
 | Dev Diaries    | [Link](writeups/tryhackme/dev_diaries.md)     | [TryHackMe](https://tryhackme.com/room/devdiaries) | Easy | ⭐⭐     | `pentesting-tools` `GitHub` |
-| Missing Person | [Link](writeups/tryhackme/missing_person.md) | [TryHackMe](https://tryhackme.com/room/missingperson) | Easy | ⭐⭐     | `Google Images` `exifmeta` |
+| Missing Person | [Link](writeups/tryhackme/missing_person.md) | [TryHackMe](https://tryhackme.com/room/missingperson) | Easy | ⭐⭐     | `Google Images search` `exifmeta` |
 
 ### Phishing Analysis
 | Name                    | Writeup                                               | Challenge                                                                            | Difficulty | Rating | Tags                                                   |
 | ----------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------------------------ |
 | Snapped Phish-ing Line | [Link](writeups/tryhackme/snapped_phish-ing_line.md) | [TryHackMe](https://tryhackme.com/room/snappedphishingline) | Easy       | ⭐⭐     | `VirusTotal` `CyberChef` `whois` `grep` |
 | The Greenholt Phish | [Link](writeups/tryhackme/the_greenholt_phish.md) | [TryHackMe](https://tryhackme.com/room/phishingemails5fgjlzxc) | Easy       | ⭐⭐     | `whois` `VirusTotal` |
-| Phishing Analysis Tools | [Link](writeups/tryhackme/phishing_analysis_tools.md) | [TryHackMe](https://tryhackme.com/room/phishingemails3tryoe) | Easy       | ⭐⭐     |  `CyberChef` `Any.Run` `Malware Analysis` |
+| Phishing Analysis Tools | [Link](writeups/tryhackme/phishing_analysis_tools.md) | [TryHackMe](https://tryhackme.com/room/phishingemails3tryoe) | Easy       | ⭐⭐     |  `CyberChef` `Any.Run` |
 
 ### Tools
 | Tool | Category | Link |
