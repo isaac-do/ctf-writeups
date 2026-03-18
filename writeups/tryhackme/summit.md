@@ -70,105 +70,105 @@ By creating a firewall rule to block the IP address associated with the attack, 
 Save the rule to receive the flag.  
 
 ## What is the third flag you receive after successfully detecting sample3.exe?
-![](../../attachments/attachment-03112026-8.png)  
-> Note: The flag received in this email is for the previous question.
 
 Moving up the Pyramid of Pain, the next level involves detecting or blocking domain names associated with the attacker’s infrastructure.  
 In this email, the penetration tester increased malware sophistication and provided `sample3.exe`.  
+![](../../attachments/attachment-03112026-8.png)  
+> Note: The flag received in this email is for the previous question.
 
-![](../../attachments/attachment-03112026-9.png)  
 The sandbox analysis shows suspicious outbound connections created by the process `sample3.exe`. The process performs HTTP GET requests to the domain `emudyn.bresonicz.info` at IP address `62.123.140.9`, using ports 1337 and 80.  
 One request downloads `backdoor.exe`, indicating that the malware is retrieving a secondary payload from a C2 server.  
 After the download, `backdoor.exe` appears as a new process and continues communicating with the same domain.  
 
 This suggests the initial file acts as a dropper, installing a backdoor and establishing external communication with the attacker’s infrastructure.  
+![](../../attachments/attachment-03112026-9.png)  
 
-![](../../attachments/attachment-03112026-10.png)  
 To block this malicious domain, navigate to the "DNS Filter" and create a new DNS rule.  
 - Category is `Botnet` as this indicates C2 communication activity.  
 - Paste the domain `emudyn.bresonicz.info` into the Domain Name field.  
 - Action is `Deny` to block connections to the domain.  
+![](../../attachments/attachment-03112026-10.png)  
 
 By creating a DNS rule to block the malicious domain `emudyn.bresonicz.info`, defenders can prevent infected systems from resolving the domain to its IP address `62.123.140.9`.  
 
 Save the rule to receive the flag.  
 
 ## What is the fourth flag you receive after successfully detecting sample4.exe?
-![](../../attachments/attachment-03112026-11.png)  
-> Note: The flag received in this email is for the previous question.
 
 Moving up the Pyramid of Pain, the next level focuses on network and host artifacts, such as suspicious file paths, registry keys, or unusual process behavior left behind by malware during execution.  
 In this email, the penetration tester increased malware sophistication and provided `sample4.exe`.  
+![](../../attachments/attachment-03112026-11.png)  
+> Note: The flag received in this email is for the previous question.
 
-![](../../attachments/attachment-03112026-12.png)  
 The sandbox analysis shows registry activity made by `sample4.exe` where it modifies the key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Real-Time Protection` and sets `DisableRealtimeMonitoring = 1`.  
 This change disables the Microsoft Defender's real-time protection which will allow the malware to run without being detected.  
+![](../../attachments/attachment-03112026-12.png)  
 
-![](../../attachments/attachment-03112026-13.png)  
 Navigate to "Sigma Rule Builder" and select Sysmon Event Logs.  
+![](../../attachments/attachment-03112026-13.png)  
 
-![](../../attachments/attachment-03112026-14.png)  
 Select Registry Modifications.  
+![](../../attachments/attachment-03112026-14.png)  
 
+The ATT&CK ID is `Defense Evasion (TA0005)` because this registry modification is attempting to prevent the malware from being detected by Microsoft Defender.  
 ![](../../attachments/attachment-03112026-15.png)  
-- The ATT&CK ID is `Defense Evasion (TA0005)` because this registry modification is attempting to prevent the malware from being detected by Microsoft Defender.  
-
 ![](../../attachments/attachment-03112026-16.png)  
+
 By creating a registry modification detection rule to monitor changes to the registry key `DisableRealtimeMonitoring`, defenders can detect when a process attempts to disable Windows Defender’s real-time protection.  
 
 Validate the rule to retrieve the flag.  
 
 ## What is the fifth flag you receive after successfully detecting sample5.exe?
-![](../../attachments/attachment-03112026-17.png)  
-> Note: The flag received in this email is for the previous question.
 
 By moving further up the Pyramid of Pain, defenders begin focusing on tools used by the attacker, rather than individual indicators.  
 In this email, the penetration tester provided a network log file `outgoing_connections.log`.  
+![](../../attachments/attachment-03112026-17.png)  
+> Note: The flag received in this email is for the previous question.
 
-![](../../attachments/attachment-03112026-18.png)  
 Based on the `outgoing_connections.log`, we see something very interesting. There is constant outgoing connections made to `51.102.10.19` on port `443` sending size of 97 bytes at regular 30 minute intervals throughout day.  
 This pattern suggests periodic beaconing behavior, indicating the infected system may be maintaining a persistent connection with an attacker-controlled server to receive commands or send status updates.  
+![](../../attachments/attachment-03112026-18.png)  
 
-![](../../attachments/attachment-03112026-13.png)  
 Navigate to "Sigma Rule Builder" and select Sysmon Event Logs.  
+![](../../attachments/attachment-03112026-13.png)  
 
-![](../../attachments/attachment-03112026-14.png)  
 Select Network Connections.  
+![](../../attachments/attachment-03112026-14.png)  
 
-![](../../attachments/attachment-03112026-19.png)  
 - Remote IP: `Any`, because note that the malware is currently very sophisticated is using multiple servers.  
 - Remote IP: `Any`, for the same reason.  
 - Size (bytes): `97`  
 - Frequency (seconds): `1800`  
 - ATT&CK ID: `Command and Control (TA0011)`, the outgoing_connections.log shows repeated outbound connections consistent with C2 beaconing behavior.  
 This rule will target any malicious IP and port that attempts to establish command-and-control communication with the infected host.  
-
+![](../../attachments/attachment-03112026-19.png)  
 ![](../../attachments/attachment-03112026-20.png)  
+
 By creating a detection rule that identifies regular outbound connections with small, consistent data sizes, defenders can detect potential command-and-control beaconing behavior. The repeated 97 byte transmissions at fixed 30 minute intervals suggest automated communication between the infected host and an attacker-controlled server.  
 
 Validate the rule to retrieve the flag.  
 
 ## What is the final flag you receive from Sphinx?
-![](../../attachments/attachment-03112026-21.png)  
-> Note: The flag received in this email is for the previous question.
 
 Moving up to the last level of the Pyramid of Pain, defenders begin detecting the attacker’s tactics, techniques, and procedures (TTPs). Detecting these behaviors forces attackers to significantly change how their malware operates, which requires far more effort than simply changing hashes, IP addresses, or domains.  
 In this email, the penetration tester provided a log file `commands.log`.  
+![](../../attachments/attachment-03112026-21.png)  
+> Note: The flag received in this email is for the previous question.
 
-![](../../attachments/attachment-03112026-22.png)  
 The `commands.log` shows that cmd.exe is executing multiple system reconnaissance commands like `systeminfo`, `ipconfig /all,` `netstat -ano`, and directory listings across several folders.  
 The output of these commands is redirected into `%temp%\exfiltr8.log`, indicating the attacker is collecting system and network information into a single file for potential data exfiltration.  
+![](../../attachments/attachment-03112026-22.png)  
 
-![](../../attachments/attachment-03112026-13.png)  
 Navigate to "Sigma Rule Builder" and select Sysmon Event Logs.  
+![](../../attachments/attachment-03112026-13.png)  
 
-![](../../attachments/attachment-03112026-14.png)  
 Select Process Creation.  
+![](../../attachments/attachment-03112026-14.png)  
 
-![](../../attachments/attachment-03112026-23.png)  
 - Set the Process Name to `cmd.exe` as the malicious actor is using this process to execute commands.  
 - Set the string to `%temp%\exfiltr8.log` to detect any command redirections to this log file.  
 - The ATT&CK ID is `Exfiltration (TA0010)` since the attacker is preparing gathered information to be extracted from the compromised system.  
+![](../../attachments/attachment-03112026-23.png)  
 
 By creating a detection rule that monitors when `cmd.exe` executes commands redirecting output to `%temp%\exfiltr8.log`, defenders can identify suspicious system reconnaissance and data collection activity.  
 
