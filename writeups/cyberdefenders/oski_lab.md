@@ -7,9 +7,9 @@ tags:
   - mitre
   - cyberdefenders
 ---
-# Challenge Overview
+# Lab Overview
 ---
-**Challenge:** [Oski Lab](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)  
+**Lab:** [Oski Lab](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)  
 **Platform:** CyberDefender  
 **Category:** Threat Intel  
 **Difficulty:** Easy  
@@ -23,7 +23,7 @@ This lab involves using VirusTotal and Any.Run reports to gather information and
 ---
 The accountant at the company received an email titled "Urgent New Order" from a client late in the afternoon. When he attempted to access the attached invoice, he discovered it contained false order information. Subsequently, the SIEM solution generated an alert regarding downloading a potentially malicious file. Upon initial investigation, it was found that the PPT file might be responsible for this download. Could you please conduct a detailed examination of this file?
 
-# Challenge
+# Analysis
 ---
 ## Determining the creation time of the malware can provide insights into its origin. What was the time of malware creation?
 

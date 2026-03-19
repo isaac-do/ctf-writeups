@@ -6,9 +6,9 @@ tags:
   - google-images
   - cyberchef
 ---
-# Challenge Overview
+# Lab Overview
 ---
-**Challenge:** [Lespion Lab](https://cyberdefenders.org/blueteam-ctf-challenges/lespion/)  
+**Lab:** [Lespion Lab](https://cyberdefenders.org/blueteam-ctf-challenges/lespion/)  
 **Platform:** CyberDefenders  
 **Category:** Threat Intel  
 **Difficulty:** Easy  
@@ -24,7 +24,7 @@ You have been tasked by a client whose network was compromised and brought offli
 
 Incident responders and digital forensic investigators are currently on the scene and have conducted a preliminary investigation. Their findings show that the attack originated from a single user account, probably, an insider. Investigate the incident, find the insider, and uncover the attack actions.  
 
-# Challenge
+# Analysis
 ---
 ## File -> Github.txt: What API key did the insider add to his GitHub repositories?
 
