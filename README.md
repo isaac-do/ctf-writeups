@@ -13,16 +13,22 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Insane | ⭐⭐⭐⭐⭐ |
 
 ## Table of Contents
+- [Network Forensics](#network-forensics)
 - [DFIR](#dfir)
 - [Cyber Threat Intelligence (CTI)](#cyber-threat-intelligence-cti)
 - [Open-Source Intelligence (OSINT)](#open-source-intelligence-osint)
 - [Phishing Analysis](#phishing-analysis)
 - [Tools](#tools)
 
+## Network Forensics
+| Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
+| ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
+| Poisoned Credentials Lab     | [Link](writeups/cyberdefenders/poisonedcredentials_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy | ⭐⭐     | `Wireshark` |
+
 ### DFIR
 | Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
 | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
-| Summit     | [Link](writeups/tryhackme/summit.md)      | [TryHackMe](https://tryhackme.com/) | Easy | ⭐⭐     | `MITRE ATT&CK` `Pyramid of Pain` |
+| Summit     | [Link](writeups/tryhackme/summit.md)      | [TryHackMe](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy | ⭐⭐     | `MITRE ATT&CK` `Pyramid of Pain` |
 | Campfire-2 | [Link](writeups/hackthebox/campfire-2.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Campfire-2?tab=play_sherlock) | Very Easy  | ⭐      | `Event Viewer` |
 | Brutus     | [Link](writeups/hackthebox/brutus.md)     | [HackTheBox](https://app.hackthebox.com/sherlocks/Brutus?tab=play_sherlock)     | Very Easy  | ⭐      | `grep` `cat` `MITRE ATT&CK` |
 
@@ -51,6 +57,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ### Tools
 | Tool | Category | Link |
 |-----|-----|-----|
+| Wireshark | Network Forensics | https://www.wireshark.org/ |
 | MITRE ATT&CK | CTI | https://attack.mitre.org/ |
 | VirusTotal | CTI | https://www.virustotal.com/ |
 | WhoIs | CTI | https://www.whois.com/whois/ |
