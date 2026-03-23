@@ -35,6 +35,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ### Cyber Threat Intelligence (CTI)
 | Name           | Writeup                                           | Challenge                                                                            | Difficulty | Rating | Tags                                  |
 | -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------- |
+| Red Stealer Lab | [Link](writeups/cyberdefenders/red_stealer_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/)     | Easy       | ⭐⭐     | `VirusTotal` `MalwareBazaar` `ThreatFox` |
 | Yellow RAT Lab | [Link](writeups/cyberdefenders/yellow_rat_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)     | Easy       | ⭐⭐     | `VirusTotal`                          |
 | Oski Lab       | [Link](writeups/cyberdefenders/oski_lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)           | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.Run` |
 | Eviction       | [Link](writeups/tryhackme/eviction.md)            | [TryHackMe](https://tryhackme.com/room/eviction)                                     | Easy       | ⭐⭐     | `MITRE ATT&CK`                        |
