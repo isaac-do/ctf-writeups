@@ -13,12 +13,19 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Insane | ⭐⭐⭐⭐⭐ |
 
 ## Table of Contents
+- [Endpoint Forensics](#endpoint-forensics)
 - [Network Forensics](#network-forensics)
 - [DFIR](#dfir)
 - [Cyber Threat Intelligence (CTI)](#cyber-threat-intelligence-cti)
 - [Open-Source Intelligence (OSINT)](#open-source-intelligence-osint)
 - [Phishing Analysis](#phishing-analysis)
 - [Tools](#tools)
+
+## Endpoint Forensics
+| Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
+| ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
+| Amadey - APT-C-36 Lab     | [Link](writeups/cyberdefenders/amadey_apt_c_36_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/) | Easy | ⭐⭐     | `Volatility3` |
+| The Crime Lab     | [Link](writeups/cyberdefenders/the_crime_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/the-crime/) | Easy | ⭐⭐     | `ALEAPP` |
 
 ## Network Forensics
 | Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
