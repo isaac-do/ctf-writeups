@@ -65,6 +65,8 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ### Tools
 | Tool | Category | Link |
 |-----|-----|-----|
+| Volatility3 | Endpoint Forensics | https://github.com/volatilityfoundation/volatility3 |
+| ALEAPP | Endpoint Forensics | https://github.com/abrignoni/ALEAPP |
 | Wireshark | Network Forensics | https://www.wireshark.org/ |
 | MITRE ATT&CK | CTI | https://attack.mitre.org/ |
 | VirusTotal | CTI | https://www.virustotal.com/ |
