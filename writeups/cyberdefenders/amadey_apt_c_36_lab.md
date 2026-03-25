@@ -28,7 +28,7 @@ An after-hours alert from the Endpoint Detection and Response (EDR) system flags
 
 # Background
 ---
-The Amadey Trojan Stealer is a form of Malware as a Service (MaaS) that acts as an infostealer. The malware's capabilities include: privilege escalation, UAC bypassing, keystroke logging, screen capture, and downloading additional malware. It typically downloads two DLLs, `clip64.dll` and `cred64.dll`, to the victim's machine and utilizes the Windows `rundll32.exe` utility to execute these components to collect information. 
+The [Amadey Trojan Stealer](../../resources/malware/amadey_trojan_stealer.md) is a form of Malware as a Service (MaaS) that acts as an infostealer. The malware's capabilities include: privilege escalation, UAC bypassing, keystroke logging, screen capture, and downloading additional malware. It typically downloads two DLLs, `clip64.dll` and `cred64.dll`, to the victim's machine and utilizes the Windows `rundll32.exe` utility to execute these components to collect information. 
 
 The Amadey malware communicates with a Command and Control (C2) server to exfiltrate system information, browser credentials, and other sensitive data. Amadey will also use persistence mechanisms like modifying the `Run` and `RunOnce` registry keys or adding itself to the scheduled tasks to keep itself in the victim's machine for further data exfiltration. 
 
@@ -43,7 +43,7 @@ We will use Volatility3 with the plugin `windows.pslist` to dump a list of proce
 vol.py -f ../../Artifacts/Windows\ 7\ x64-Snapshot4.vmem windows.pslist
 ```
 ![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-1.png)  
-From the screenshot, we can observe the process `rundll32.exe` with a PID of `3064`. It's PPID (Parent PID) is `2748` and the process with a PID of `2748` is `lssass.exe` which we can conclude that this is the parent process that triggered the malicious behavior.  
+From the screenshot, we can observe the process `rundll32.exe` with a PID of `3064` which we know is used by Amadey. It's PPID (Parent PID) is `2748` and the process with a PID of `2748` is `lssass.exe` so we can conclude that this is the parent process that triggered the malicious behavior.  
 
 ## Once the rogue process is identified, its exact location on the device can reveal more about its nature and source. Where is this process housed on the workstation?
 
