@@ -28,7 +28,7 @@ An after-hours alert from the Endpoint Detection and Response (EDR) system flags
 
 # Background
 ---
-The [Amadey Trojan Stealer](../../resources/malware/amadey_trojan_stealer.md) is a form of Malware as a Service (MaaS) that acts as an infostealer. The malware's capabilities include: privilege escalation, UAC bypassing, keystroke logging, screen capture, and downloading additional malware. It typically downloads two DLLs, `clip64.dll` and `cred64.dll`, to the victim's machine and utilizes the Windows `rundll32.exe` utility to execute these components to collect information. 
+The [Amadey Trojan Stealer](https://www.splunk.com/en_us/blog/security/amadey-threat-analysis-and-detections.html) is a form of Malware as a Service (MaaS) that acts as an infostealer. The malware's capabilities include: privilege escalation, UAC bypassing, keystroke logging, screen capture, and downloading additional malware. It typically downloads two DLLs, `clip64.dll` and `cred64.dll`, to the victim's machine and utilizes the Windows `rundll32.exe` utility to execute these components to collect information. 
 
 The Amadey malware communicates with a Command and Control (C2) server to exfiltrate system information, browser credentials, and other sensitive data. Amadey will also use persistence mechanisms like modifying the `Run` and `RunOnce` registry keys or adding itself to the scheduled tasks to keep itself in the victim's machine for further data exfiltration. 
 
