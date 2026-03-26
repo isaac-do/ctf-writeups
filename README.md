@@ -30,6 +30,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ## Network Forensics
 | Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
 | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
+| DanaBot Lab     | [Link](writeups/cyberdefenders/danabot_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/danabot/) | Easy | ⭐⭐     | `Wireshark` `VirusTotal` |
 | PsExec Hunt Lab     | [Link](writeups/cyberdefenders/psexec_hunt_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/) | Easy | ⭐⭐     | `Wireshark` |
 | Poisoned Credentials Lab     | [Link](writeups/cyberdefenders/poisonedcredentials_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy | ⭐⭐     | `Wireshark` |
 
