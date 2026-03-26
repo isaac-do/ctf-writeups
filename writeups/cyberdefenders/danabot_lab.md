@@ -42,11 +42,11 @@ What we will see is that there are large amounts of TLS traffic along with some 
 One of the first things I noticed in the network traffic is a DNS query for an interesting domain name.  
 ![](../../attachments/attachment-danabot_lab-03262026-12.png)  
 
-My next thought was to check whether this is a legitimate domain name or if it is malicious. Using VirusTotal, I submitted the domain name `portfolio.serveirc.com` to run an analysis on it.  
+Now, I wanted to check whether this is a legitimate domain name or if it is malicious. Using VirusTotal, I submitted the domain name `portfolio.serveirc.com` to run an analysis on it.  
 ![](../../attachments/attachment-danabot_lab-03262026-1.png)  
 Based on the screenshot, this domain is clearly malicious and it looks like its activity is linked to `DANABOT`.  
 
-The next thing I thought to check was to see what IP addresses have been known to be linked to this domain name. Navigating to the Relations tab, I identified the IP address `62.173.143.148`.  
+The next thing I wanted to check was to see what IP addresses have been known to be linked to this domain name. Navigating to the Relations tab, I identified the IP address `62.173.143.148`.  
 ![](../../attachments/attachment-danabot_lab-03262026-2.png)  
 Taking a look at the network traffic again, I see there is presence of this IP address. From my observation, I can see the client `10.2.14.101` is initiating a connection to domain name `portfolio.serveirc.com` which was resolved by DNS to IP address `62.173.143.148`, and sent an HTTP GET request for `/login.php` (likely the login page for the website).  
 
