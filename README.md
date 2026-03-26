@@ -30,6 +30,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ## Network Forensics
 | Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
 | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
+| PsExec Hunt Lab     | [Link](writeups/cyberdefenders/psexec_hunt_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/) | Easy | ⭐⭐     | `Wireshark` |
 | Poisoned Credentials Lab     | [Link](writeups/cyberdefenders/poisonedcredentials_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy | ⭐⭐     | `Wireshark` |
 
 ### DFIR
@@ -42,6 +43,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ### Cyber Threat Intelligence (CTI)
 | Name           | Writeup                                           | Challenge                                                                            | Difficulty | Rating | Tags                                  |
 | -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------- |
+| 3CX Supply Chain Lab | [Link](writeups/cyberdefenders/3cx_supply_chain_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/)     | Easy       | ⭐⭐     | `VirusTotal` `MITRE ATT&CK` |
 | Red Stealer Lab | [Link](writeups/cyberdefenders/red_stealer_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/)     | Easy       | ⭐⭐     | `VirusTotal` `MalwareBazaar` `ThreatFox` |
 | Yellow RAT Lab | [Link](writeups/cyberdefenders/yellow_rat_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)     | Easy       | ⭐⭐     | `VirusTotal`                          |
 | Oski Lab       | [Link](writeups/cyberdefenders/oski_lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)           | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.Run` |
