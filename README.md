@@ -22,39 +22,43 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 - [Tools](#tools)
 
 ## Endpoint Forensics
-| Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
-| ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
-| Amadey - APT-C-36 Lab     | [Link](writeups/cyberdefenders/amadey_apt_c_36_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/) | Easy | ⭐⭐     | `Volatility3` `grep` `strings` |
-| The Crime Lab     | [Link](writeups/cyberdefenders/the_crime_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/the-crime/) | Easy | ⭐⭐     | `ALEAPP` |
+| Name                  | Writeup                                                | Challenge                                                                             | Difficulty | Rating | Tags                           |
+| --------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------- | ---------- | ------ | ------------------------------ |
+| Ramnit Lab            | [Link](writeups/cyberdefenders/endpoint-forensics/easy/ramnit-lab.md)          | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/ramnit/)          | Easy       | ⭐⭐     | `Volatility3` `VirusTotal`     |
+| Insider Lab           | [Link](writeups/cyberdefenders/endpoint-forensics/easy/insider-lab.md)         | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/insider/)         | Easy       | ⭐⭐     | `FTK Imager` `LogViewer2`      |
+| Amadey - APT-C-36 Lab | [Link](writeups/cyberdefenders/endpoint-forensics/easy/amadey-apt-c-36-lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/) | Easy       | ⭐⭐     | `Volatility3` `grep` `strings` |
+| The Crime Lab         | [Link](writeups/cyberdefenders/endpoint-forensics/easy/the-crime-lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/the-crime/)       | Easy       | ⭐⭐     | `ALEAPP`                       |
 
 ## Network Forensics
-| Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
-| ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
-| DanaBot Lab     | [Link](writeups/cyberdefenders/danabot_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/danabot/) | Easy | ⭐⭐     | `Wireshark` `VirusTotal` |
-| PsExec Hunt Lab     | [Link](writeups/cyberdefenders/psexec_hunt_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/) | Easy | ⭐⭐     | `Wireshark` |
-| Poisoned Credentials Lab     | [Link](writeups/cyberdefenders/poisonedcredentials_lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy | ⭐⭐     | `Wireshark` |
+| Name                     | Writeup                                                                           | Challenge                                                                                 | Difficulty | Rating | Tags                     |
+| ------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------- | ------ | ------------------------ |
+| PacketDetective Lab      | [Link](writeups/cyberdefenders/network-forensics/easy/packetdetective-lab.md)     | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/)     | Easy       | ⭐⭐     | `Wireshark`              |
+| DanaBot Lab              | [Link](writeups/cyberdefenders/network-forensics/easy/danabot-lab.md)             | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/danabot/)             | Easy       | ⭐⭐     | `Wireshark` `VirusTotal` |
+| PsExec Hunt Lab          | [Link](writeups/cyberdefenders/network-forensics/easy/psexec-hunt-lab.md)         | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/)         | Easy       | ⭐⭐     | `Wireshark`              |
+| Poisoned Credentials Lab | [Link](writeups/cyberdefenders/network-forensics/easy/poisonedcredentials-lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy       | ⭐⭐     | `Wireshark`              |
 
 ### DFIR
 | Name       | Writeup                                   | Challenge                                                                       | Difficulty | Rating | Tags                                            |
 | ---------- | ----------------------------------------- | ------------------------------------------------------------------------------- | ---------- | ------ | ----------------------------------------------- |
 | Summit     | [Link](writeups/tryhackme/summit.md)      | [TryHackMe](https://cyberdefenders.org/blueteam-ctf-challenges/poisonedcredentials/) | Easy | ⭐⭐     | `MITRE ATT&CK` `Pyramid of Pain` |
-| Campfire-2 | [Link](writeups/hackthebox/campfire-2.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Campfire-2?tab=play_sherlock) | Very Easy  | ⭐      | `Event Viewer` |
-| Brutus     | [Link](writeups/hackthebox/brutus.md)     | [HackTheBox](https://app.hackthebox.com/sherlocks/Brutus?tab=play_sherlock)     | Very Easy  | ⭐      | `grep` `cat` `MITRE ATT&CK` |
+| Campfire-2 | [Link](writeups/hackthebox/dfir/very-easy/campfire-2.md) | [HackTheBox](https://app.hackthebox.com/sherlocks/Campfire-2?tab=play_sherlock) | Very Easy  | ⭐      | `Event Viewer` |
+| Brutus     | [Link](writeups/hackthebox/dfir/very-easy/brutus.md)     | [HackTheBox](https://app.hackthebox.com/sherlocks/Brutus?tab=play_sherlock)     | Very Easy  | ⭐      | `grep` `cat` `MITRE ATT&CK` |
 
 ### Cyber Threat Intelligence (CTI)
-| Name           | Writeup                                           | Challenge                                                                            | Difficulty | Rating | Tags                                  |
-| -------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------- | ------ | ------------------------------------- |
-| 3CX Supply Chain Lab | [Link](writeups/cyberdefenders/3cx_supply_chain_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/)     | Easy       | ⭐⭐     | `VirusTotal` `MITRE ATT&CK` |
-| Red Stealer Lab | [Link](writeups/cyberdefenders/red_stealer_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/)     | Easy       | ⭐⭐     | `VirusTotal` `MalwareBazaar` `ThreatFox` |
-| Yellow RAT Lab | [Link](writeups/cyberdefenders/yellow_rat_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)     | Easy       | ⭐⭐     | `VirusTotal`                          |
-| Oski Lab       | [Link](writeups/cyberdefenders/oski_lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)           | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.Run` |
-| Eviction       | [Link](writeups/tryhackme/eviction.md)            | [TryHackMe](https://tryhackme.com/room/eviction)                                     | Easy       | ⭐⭐     | `MITRE ATT&CK`                        |
-| Dream Job-1    | [Link](writeups/hackthebox/dream_job-1.md)        | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock) | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal`           |
+| Name                 | Writeup                                                                   | Challenge                                                                              | Difficulty | Rating | Tags                                     |
+| -------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------- | ------ | ---------------------------------------- |
+| GrabThePhisher Lab   | [Link](writeups/cyberdefenders/threat-intel/easy/grabthephisher_lab.md)   | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/grabthephisher/)   | Easy       | ⭐⭐     | `VSCode`                                 |
+| 3CX Supply Chain Lab | [Link](writeups/cyberdefenders/threat-intel/easy/3cx-supply-chain-lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/3cx-supply-chain/) | Easy       | ⭐⭐     | `VirusTotal` `MITRE ATT&CK`              |
+| Red Stealer Lab      | [Link](writeups/cyberdefenders/threat-intel/easy/red-stealer-lab.md)      | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/red-stealer/)      | Easy       | ⭐⭐     | `VirusTotal` `MalwareBazaar` `ThreatFox` |
+| Yellow RAT Lab       | [Link](writeups/cyberdefenders/threat-intel/easy/yellow-rat-lab.md)       | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/yellow-rat/)       | Easy       | ⭐⭐     | `VirusTotal`                             |
+| Oski Lab             | [Link](writeups/cyberdefenders/threat-intel/easy/oski-lab.md)             | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/oski/)             | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal` `Any.Run`    |
+| Eviction             | [Link](writeups/tryhackme/eviction.md)                                    | [TryHackMe](https://tryhackme.com/room/eviction)                                       | Easy       | ⭐⭐     | `MITRE ATT&CK`                           |
+| Dream Job-1          | [Link](writeups/hackthebox/threat-intel/very-easy/dream-job-1.md)         | [HackTheBox](https://app.hackthebox.com/sherlocks/Dream%2520Job-1?tab=play_sherlock)   | Easy       | ⭐⭐     | `MITRE ATT&CK` `VirusTotal`              |
 
 ### Open-Source Intelligence (OSINT)
 | Name        | Writeup                                    | Challenge                                                                            | Difficulty | Rating | Tags                        |
 | ----------- | ------------------------------------------ | ------------------------------------------------------------------------------------ | ---------- | ------ | --------------------------- |
-| Lespion Lab | [Link](writeups/cyberdefenders/lespion_lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/lespion/)     | Easy       | ⭐⭐     | `Google Images search` `CyberChef` |
+| Lespion Lab | [Link](writeups/cyberdefenders/threat-intel/easy/lespion-lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/lespion/)     | Easy       | ⭐⭐     | `Google Images search` `CyberChef` |
 | Dev Diaries    | [Link](writeups/tryhackme/dev_diaries.md)     | [TryHackMe](https://tryhackme.com/room/devdiaries) | Easy | ⭐⭐     | `pentesting-tools` `GitHub` |
 | Missing Person | [Link](writeups/tryhackme/missing_person.md) | [TryHackMe](https://tryhackme.com/room/missingperson) | Easy | ⭐⭐     | `Google Images search` `exifmeta` |
 
@@ -66,14 +70,16 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 | Phishing Analysis Tools | [Link](writeups/tryhackme/phishing_analysis_tools.md) | [TryHackMe](https://tryhackme.com/room/phishingemails3tryoe) | Easy       | ⭐⭐     |  `CyberChef` `Any.Run` |
 
 ### Tools
-| Tool | Category | Link |
-|-----|-----|-----|
-| Volatility3 | Endpoint Forensics | https://github.com/volatilityfoundation/volatility3 |
-| ALEAPP | Endpoint Forensics | https://github.com/abrignoni/ALEAPP |
-| Wireshark | Network Forensics | https://www.wireshark.org/ |
-| MITRE ATT&CK | CTI | https://attack.mitre.org/ |
-| VirusTotal | CTI | https://www.virustotal.com/ |
-| WhoIs | CTI | https://www.whois.com/whois/ |
-| Any.Run | Malware Analysis | https://any.run/ |
-| CyberChef | DFIR | https://gchq.github.io/CyberChef/ |
-| ExifMeta | OSINT | https://exifmeta.com/ |
+| Tool         | Category           | Link                                                                                                                           |
+| ------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| LogViewer2   | Endpoint Forensics | [https://github.com/woanware/LogViewer2](https://github.com/woanware/LogViewer2)                                               |
+| FTK Imager   | Endpoint Forensics | [https://www.exterro.com/digital-forensics-software/ftk-imager](https://www.exterro.com/digital-forensics-software/ftk-imager) |
+| Volatility3  | Endpoint Forensics | https://github.com/volatilityfoundation/volatility3                                                                            |
+| ALEAPP       | Endpoint Forensics | https://github.com/abrignoni/ALEAPP                                                                                            |
+| Wireshark    | Network Forensics  | https://www.wireshark.org/                                                                                                     |
+| MITRE ATT&CK | CTI                | https://attack.mitre.org/                                                                                                      |
+| VirusTotal   | CTI                | https://www.virustotal.com/                                                                                                    |
+| WhoIs        | CTI                | https://www.whois.com/whois/                                                                                                   |
+| Any.Run      | Malware Analysis   | https://any.run/                                                                                                               |
+| CyberChef    | DFIR               | https://gchq.github.io/CyberChef/                                                                                              |
+| ExifMeta     | OSINT              | https://exifmeta.com/                                                                                                          |

@@ -42,7 +42,7 @@ We will use Volatility3 with the plugin `windows.pslist` to dump a list of proce
 ```bash
 vol.py -f ../../Artifacts/Windows\ 7\ x64-Snapshot4.vmem windows.pslist
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-1.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-1.png)  
 From the screenshot, we can observe the process `rundll32.exe` with a PID of `3064` which we know is used by Amadey. It's PPID (Parent PID) is `2748` and the process with a PID of `2748` is `lssass.exe` so we can conclude that this is the parent process that triggered the malicious behavior.  
 
 ## Once the rogue process is identified, its exact location on the device can reveal more about its nature and source. Where is this process housed on the workstation?
@@ -51,7 +51,7 @@ To find the location of the process `lssass.exe`, we can dump the DLL list for t
 ```bash
 vol.py -f ../../Artifacts/Windows\ 7\ x64-Snapshot4.vmem windows.dlllist --pid 2748
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026.png)  
 
 ## Persistent external communications suggest the malware's attempts to reach out C2C server. Can you identify the Command and Control (C2C) server IP that the process interacts with?
 
@@ -64,7 +64,7 @@ Once Volatility3 finishes, utilize the `grep` command to filter for PID `2748` w
 ```bash
 grep 2748 netscan.txt
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-2.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-2.png)  
 From the screenshot, the process `lssass.exe` appears to have two closed TCP connections to IP address `41.75.84.12` over port `80` (HTTP traffic). The suspicious process `lssass.exe` sending traffic to an external IP address highly indicates that this is C2 communications. In addition, the fact that port 80 is used likely indicates that the malware attempted to disguise suspicious traffic as normal web communication.  
 
 Based on this information, the IP address `41.75.84.12` is likely the Command and Control (C2) server that the malware is interacting with.  
@@ -77,7 +77,7 @@ Run Volatility3 with the plugin `windows.memmap` and option `--pid 2748` to dump
 ```bash
 vol.py -f ../../Artifacts/Windows\ 7\ x64-Snapshot4.vmem windows.memmap --pid 2748 --dump
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-4.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-4.png)  
 This command generates a memory dump file, `pid.2748.dmp`, which we can use to parse for artifacts.
 
 Once the dump is created, we can use the `strings` utility to extract readable text from the memory file since the memory dump provides raw data from the process's memory space.  
@@ -85,7 +85,7 @@ This command with search for HTTP GET requests in the memory dump.
 ```bash
 strings pid.2748.dmp | grep "GET /"
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-3.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-3.png)  
 From the output, we can observe two files `cred64.dll` and `clip64.dll` that were fetched by the process with PID `2748`. These two DLLs are known plugins that the Amadey malware uses to steal sensitive information.
 
 ## Identifying the storage points of these additional components is critical for containment and cleanup. What is the full path of the file downloaded and used by the malware in its malicious activity?
@@ -99,14 +99,14 @@ Once the output file is created, filter for both DLLs names `cred64` and `clip64
 ```bash
 grep -E "cred64|clip64" filescan.txt
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-7.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-7.png)  
 From the screenshot, we find the full path of the downloaded file `clip64.dll`. Something to note is that the file is located inside the folder `11671le5a2ab05` which likely indicates the malware is attempting to evade detection by using a randomly generated folder name.  
 
 To confirm this file is used by the malware, we can use the `windows.cmdline` plugin which will dump all of the commands executed by the system. What we are looking for is the name of the file the malware executed.  
 ```bash
 vol.py -f ../../Artifacts/Windows\ 7\ x64-Snapshot4.vmem windows.cmdline
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-6.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-6.png)  
 From the screenshot, we can confirm that the malware executed the file `clip64.dll` using the `rundll32.exe` utility.  
 ## Once retrieved, the malware aims to activate its additional components. Which child process is initiated by the malware to execute these files?
 
@@ -114,7 +114,7 @@ Using the same `windows.cmdline` plugin, the malware used `rundll32.exe` to exec
 ```bash
 vol.py -f ../../Artifacts/Windows\ 7\ x64-Snapshot4.vmem windows.cmdline
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-6.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-6.png)  
 
 ## Understanding the full range of Amadey's persistence mechanisms can help in an effective mitigation. Apart from the locations already spotlighted, where else might the malware be ensuring its consistent presence?
 
@@ -124,7 +124,7 @@ We have already previously ran the file scan and redirected the output to `files
 ```bash
 grep -E "lssass" filescan.txt
 ```
-![](../../attachments/attachment-amadey_apt_c_36_lab-03242026-8.png)  
+![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-8.png)  
 Based on the results, we see a second path under `\Windows\System32\Tasks` which is indicative that the process is likely registering itself as a scheduled task to allow it to automatically start upon system reboot or at scheduled times.  
 
 # Additional Resources
