@@ -22,8 +22,9 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 - [Tools](#tools)
 
 ## Endpoint Forensics
-| Name                  | Writeup                                                | Challenge                                                                             | Difficulty | Rating | Tags                           |
-| --------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------- | ---------- | ------ | ------------------------------ |
+| Name                  | Writeup                                                                        | Challenge                                                                             | Difficulty | Rating | Tags                           |
+| --------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ---------- | ------ | ------------------------------ |
+| Redline Lab           | [Link](writeups/cyberdefenders/endpoint-forensics/easy/redline-lab.md)         | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/redline/)         | Easy       | ⭐⭐     | `Volatility3` `strings`        |
 | Ramnit Lab            | [Link](writeups/cyberdefenders/endpoint-forensics/easy/ramnit-lab.md)          | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/ramnit/)          | Easy       | ⭐⭐     | `Volatility3` `VirusTotal`     |
 | Insider Lab           | [Link](writeups/cyberdefenders/endpoint-forensics/easy/insider-lab.md)         | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/insider/)         | Easy       | ⭐⭐     | `FTK Imager` `LogViewer2`      |
 | Amadey - APT-C-36 Lab | [Link](writeups/cyberdefenders/endpoint-forensics/easy/amadey-apt-c-36-lab.md) | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/) | Easy       | ⭐⭐     | `Volatility3` `grep` `strings` |
@@ -32,6 +33,7 @@ Each writeup in this repository provides a step-by-step breakdown of the approac
 ## Network Forensics
 | Name                     | Writeup                                                                           | Challenge                                                                                 | Difficulty | Rating | Tags                     |
 | ------------------------ | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ---------- | ------ | ------------------------ |
+| Tomcat Takeover Lab      | [Link](writeups/cyberdefenders/network-forensics/easy/tomcat-takeover-lab.md)     | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/tomcat-takeover/)     | Easy       | ⭐⭐     | `Wireshark`              |
 | PacketDetective Lab      | [Link](writeups/cyberdefenders/network-forensics/easy/packetdetective-lab.md)     | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/)     | Easy       | ⭐⭐     | `Wireshark`              |
 | DanaBot Lab              | [Link](writeups/cyberdefenders/network-forensics/easy/danabot-lab.md)             | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/danabot/)             | Easy       | ⭐⭐     | `Wireshark` `VirusTotal` |
 | PsExec Hunt Lab          | [Link](writeups/cyberdefenders/network-forensics/easy/psexec-hunt-lab.md)         | [CyberDefenders](https://cyberdefenders.org/blueteam-ctf-challenges/psexec-hunt/)         | Easy       | ⭐⭐     | `Wireshark`              |
