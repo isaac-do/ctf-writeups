@@ -18,7 +18,7 @@ tags:
 ---
 This lab involves memory forensics analysis of a compromised Windows machine to identify malware activity. Using Volatility3, process enumeration revealed a suspicious executable `ChromeSetup.exe` running from the user's Downloads directory.  
 
-Further analysis of network activity showed that the malicious process attempted to establish a connection to the external IP address `58.64.204.181`, which was geolocated to Hong Kong suggesting command-and-control (C2) communication. Threat intelligence analysis revealed the malware's compilation time and associated malicious domain, identified as `dnsnb8[.]net`.  
+Further analysis of network activity showed that the malicious process attempted to establish a connection to the external IP address `58[.]64[.]204[.]181`, which was geolocated to Hong Kong suggesting command-and-control (C2) communication. Threat intelligence analysis revealed the malware's compilation time and associated malicious domain, identified as `dnsnb8[.]net`.  
 
 The findings indicate a staged malware infection involving a trojan executable, attempted outbound communication to suspicious infrastructure, and identifiable indicators of compromise (IOCs).  
 
@@ -60,11 +60,11 @@ Then I searched in the output text file specifically for the `ChromeSetup.exe` p
 grep "Chrome" netstat.txt
 ```
 ![](../../../../attachments/attachment-ramnit-lab-03292026-2.png)  
-From the result, I observed that the `ChromeSetup.exe` process attempted to initiate a TCP connection to IP address `58.64.204.181`. The process had only just sent the SYN message as part of the TCP three-way handshake so it had not yet fully established the connection.  
+From the result, I observed that the `ChromeSetup.exe` process attempted to initiate a TCP connection to IP address `58[.]64[.]204[.]181`. The process had only just sent the SYN message as part of the TCP three-way handshake so it had not yet fully established the connection.  
 
 ## To determine the specific geographical origin of the attack, Which city is associated with the IP address the malware communicated with?
 
-Using IPinfo, further analysis of the IP address `58.64.204.181` revealed that it resolves to the domain `hkbn[.]net` located in `Hong Kong` in Asia.  
+Using IPinfo, further analysis of the IP address `58[.]64[.]204[.]181` revealed that it resolves to the domain `hkbn[.]net` located in `Hong Kong` in Asia.  
 ![](../../../../attachments/attachment-ramnit-lab-03282026-3.png)  
 This is highly suspicious because this IP address is not associated with official Google infrastructure which typically uses a domain like `google.com`. This discrepancy raises suspicion that the IP address may be hosting malicious content or serving as a command-and-control (C2) server.
 

@@ -31,11 +31,11 @@ The SOC team has identified suspicious activity on a web server within the compa
 
 To identify scanning behavior, I used the `Statistics > Conversations` feature in Wireshark to check the TCP conversations in this network capture.  
 ![](../../../../attachments/attachment-tomcat-takeover-lab-03292026.png)  
-Upon sorting port B in ascending order, it revealed that the IP address `14.0.0.120` showed port scanning activity. The destination ports increasing sequentially from low to high values indicates that this behavior is suspicious and it is a common pattern associated with port scanning activity.  
+Upon sorting port B in ascending order, it revealed that the IP address `14[.]0[.]0[.]120` showed port scanning activity. The destination ports increasing sequentially from low to high values indicates that this behavior is suspicious and it is a common pattern associated with port scanning activity.  
 
 ## Based on the identified IP address associated with the attacker, can you identify the country from which the attacker's activities originated?
 
-To further investigate the IP address `14.0.0.120`, I used IPinfo to reveal geolocation details on this IP address. From the screenshot below, this IP address originated from `China`.  
+To further investigate the IP address `14[.]0[.]0[.]120`, I used IPinfo to reveal geolocation details on this IP address. From the screenshot below, this IP address originated from `China`.  
 ![](../../../../attachments/attachment-tomcat-takeover-lab-03292026-1.png)  
 
 ## From the PCAP file, multiple open ports were detected as a result of the attacker's active scan. Which of these ports provides access to the web server admin panel?

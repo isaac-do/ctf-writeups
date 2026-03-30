@@ -63,7 +63,7 @@ Navigate to **Behavior > Network Communication** then search for a domain name r
 
 ## Once the malicious IP addresses are identified, network security devices such as firewalls can be configured to block traffic to and from these addresses. Can you provide the IP address and destination port the malware communicates with?
 
-In the same Behavior tab and Network Communication section, if we look under IP Traffic we can observe a suspicious traffic to `77.91.124.55:19071`. The port number `19071` is not commonly used so we can conclude this is the IP address and port the malware communicates with.  
+In the same Behavior tab and Network Communication section, if we look under IP Traffic we can observe a suspicious traffic to `77[.]91[.]124[.]55[:]19071`. The port number `19071` is not commonly used so we can conclude this is the IP address and port the malware communicates with.  
 ![](../../../../attachments/attachment-03192026-14.png)  
 ![](../../../../attachments/attachment-03192026-15.png)  
 
@@ -79,5 +79,5 @@ Using ThreatFox, run the search `ioc:77.91.124.55` to find the malware alias.
 
 ## By identifying the malware's imported DLLs, we can configure security tools to monitor for the loading or unusual usage of these specific DLLs. Can you provide the DLL utilized by the malware for privilege escalation?
 
-Back in VirusTotal, navigate to **Details >  Portable Executable Info** and under Imports section, we can find DLL `ADVAPI32.dll `that involves privileges which likely indicates that this DLL was used by the malware for privilege escalation.  
+Back in VirusTotal, navigate to **Details >  Portable Executable Info** and under Imports section, we can find DLL `ADVAPI32.dll` that involves privileges which likely indicates that this DLL was used by the malware for privilege escalation.  
 ![](../../../../attachments/attachment-03192026-18.png)  

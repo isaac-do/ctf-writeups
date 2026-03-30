@@ -19,9 +19,9 @@ tags:
 ---
 This lab investigates network traffic from a PCAP file to identify the suspicious activity involving stolen sensitive company information. Using Wireshark to analyze the PCAP file, it was identified that a connection was established to a malicious website `portfolio[.]serveirc[.]com`, which forced the infected machine to download a malicious JavaScript file.  
 
-It was determined that the domain resolved to the IP address `62.173.143.148` confirming communication with known malicious infrastructure associated with the DanaBot malware. The JavaScript file `allegato_708.js` was delivered through an HTTP response disguised as normal web traffic.  
+It was determined that the domain resolved to the IP address `62[.]173[.]143[.]148` confirming communication with known malicious infrastructure associated with the DanaBot malware. The JavaScript file `allegato_708.js` was delivered through an HTTP response disguised as normal web traffic.  
 
-Deobfuscating the script revealed it leveraged `WScript.exe` for execution which then downloaded a second payload `resources.dll` and executed using `rundll32.exe.` Overall, the activity aligns with DanaBot infection patterns.  
+Deobfuscating the script revealed it leveraged `WScript.exe` for execution which then downloaded a second payload `resources.dll` and executed using `rundll32.exe`. Overall, the activity aligns with DanaBot infection patterns.  
 
 # Scenario
 ---
@@ -46,11 +46,11 @@ Now, I wanted to check whether this is a legitimate domain name or if it is mali
 ![](../../../../attachments/attachment-danabot_lab-03262026-1.png)  
 Based on the screenshot, this domain is clearly malicious and it looks like its activity is linked to `DANABOT`.  
 
-The next thing I wanted to check was to see what IP addresses have been known to be linked to this domain name. Navigating to the Relations tab, I identified the IP address `62.173.143.148`.  
+The next thing I wanted to check was to see what IP addresses have been known to be linked to this domain name. Navigating to the Relations tab, I identified the IP address `62[.]173[.]143[.]148`.  
 ![](../../../../attachments/attachment-danabot_lab-03262026-2.png)  
-Taking a look at the network traffic again, I see there is presence of this IP address. From my observation, I can see the client `10.2.14.101` is initiating a connection to domain name `portfolio[.]serveirc[.]com` which was resolved by DNS to IP address `62.173.143.148`, and sent an HTTP GET request for `/login.php` (likely the login page for the website).  
+Taking a look at the network traffic again, I see there is presence of this IP address. From my observation, I can see the client `10.2.14.101` is initiating a connection to domain name `portfolio[.]serveirc[.]com` which was resolved by DNS to IP address `62[.]173[.]143[.]148`, and sent an HTTP GET request for `/login.php` (likely the login page for the website).  
 
-This confirms that the IP address `62.173.143.148` was used by the attacker for initial access.  
+This confirms that the IP address `62[.]173[.]143[.]148` was used by the attacker for initial access.  
 
 ## What is the name of the malicious file used for initial access?
 

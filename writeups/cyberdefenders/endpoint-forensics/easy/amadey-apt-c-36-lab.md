@@ -65,9 +65,9 @@ Once Volatility3 finishes, utilize the `grep` command to filter for PID `2748` w
 grep 2748 netscan.txt
 ```
 ![](../../../../attachments/attachment-amadey_apt_c_36_lab-03242026-2.png)  
-From the screenshot, the process `lssass.exe` appears to have two closed TCP connections to IP address `41.75.84.12` over port `80` (HTTP traffic). The suspicious process `lssass.exe` sending traffic to an external IP address highly indicates that this is C2 communications. In addition, the fact that port 80 is used likely indicates that the malware attempted to disguise suspicious traffic as normal web communication.  
+From the screenshot, the process `lssass.exe` appears to have two closed TCP connections to IP address `41[.]75[.]84[.]12` over port `80` (HTTP traffic). The suspicious process `lssass.exe` sending traffic to an external IP address highly indicates that this is C2 communications. In addition, the fact that port 80 is used likely indicates that the malware attempted to disguise suspicious traffic as normal web communication.  
 
-Based on this information, the IP address `41.75.84.12` is likely the Command and Control (C2) server that the malware is interacting with.  
+Based on this information, the IP address `41[.]75[.]84[.]12` is likely the Command and Control (C2) server that the malware is interacting with.  
 
 ## Following the malware link with the C2C, the malware is likely fetching additional tools or modules. How many distinct files is it trying to bring onto the compromised workstation?
 
