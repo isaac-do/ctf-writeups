@@ -1,8 +1,8 @@
 # CTF Writeups
-This is my collection of CTF writeups covering digital forensics, threat detection, exploitation analysis, incident response exercises, and many more. This repository documents the process I used to analyze and solve challenges from various security training platforms. My goal is to provide a clear record of investigation techniques, tools, and reasoning used during each challenge.
+This is my collection of CTF writeups focused on blue team and DFIR disciplines, including memory and disk forensics, network traffic analysis, threat hunting, cloud forensics, and more. All challenges are sourced from platforms like CyberDefenders, HackTheBox Sherlocks, and TryHackMe. My goal is to provide a clear record of investigation techniques, tools, and reasoning used during each challenge.  
 
 ## Writeups
-Each writeup in this repository provides a step-by-step breakdown of the approach taken to retrieve the challenge flag. The writeups explain the investigation process used to solve the challenge, including the tools, commands, and reasoning behind the analysis. Challenges are grouped by their general category, such as DFIR, threat intelligence, and network forensics. The difficulty labels categorized in the writeups follow the ratings provided by the original platform so whatever HackTheBox or TryHackMe labeled as Easy or Hard is what I used.  
+Each writeup in this repository provides a step-by-step breakdown of the approach taken to answer each challenge question. The writeups explain the investigation process, including the tools, commands, and reasoning behind the analysis. Challenges are grouped by their general category, such as endpoint forensics, network forensics, threat hunting, etc. The difficulty labels categorized in the writeups follow the ratings provided by the original platform so whatever HackTheBox or TryHackMe labeled as Easy or Hard is what I used.  
 
 | Difficulty | Rating |
 |-----|-----|
