@@ -15,7 +15,7 @@ tags:
 
 # Summary
 ---
-Write a summary of the CTF challenge.
+This lab simulates a real-world digital forensics case involving a criminal suspect operating out of Metro Manila, Philippines. Acting as a DFIR First Responder, the investigation requires properly acquiring and analyzing digital artifacts from the suspect's device using FTK Imager. The lab emphasizes proper chain-of-custody procedures and the dual role of acquisition and analysis that forensic examiners may encounter in high-profile cases.
 
 # Scenario
 ---

@@ -16,7 +16,9 @@ tags:
 
 # Summary
 ---
-This lab involves using tools like VirusTotal and Red Canary to gather information on a malware.
+This lab involves threat intelligence analysis of a malicious DLL responsible for abnormal network traffic and browser search redirection using VirusTotal and Red Canary. The malware was identified as belonging to the Yellow Cockatoo malware family, with its original filename and compilation timestamp retrieved from VirusTotal's portable executable metadata.
+
+Further investigation using a Red Canary threat report revealed that the malware drops a `.dat` persistence file in the AppData folder and communicates with a specific C2 server domain. The lab demonstrates how combining multiple threat intelligence sources can rapidly attribute malware, recover behavioral indicators, and identify the infrastructure used by threat actors for command-and-control operations.
 
 # Scenario
 ---

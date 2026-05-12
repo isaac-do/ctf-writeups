@@ -17,7 +17,9 @@ tags:
 
 # Summary
 ---
-This lab involves using VirusTotal and Any.Run reports to gather information and analyze a malicious PPT file. 
+This lab involves analyzing a malicious PPT file delivered as a fake invoice attachment using VirusTotal and Any.Run sandbox reports. The malware was created at a specific timestamp and established communication with a C2 server via POST requests. Upon infection, the malware requested a DLL library as its first payload.
+
+Behavioral analysis using the Any.Run sandbox revealed the RC4 encryption key used to decrypt its base64-encoded configuration strings. The MITRE ATT&CK matrix mapped the malware's primary credential theft method to the `Credentials from Password Stores` technique. Post-exfiltration, the malware executed a self-deletion routine using `timeout.exe` with a 5-second delay, and cleaned up all DLL files from the `ProgramData` directory to erase artifacts and evade detection.
 
 # Scenario
 ---

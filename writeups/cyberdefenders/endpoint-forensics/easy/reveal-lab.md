@@ -14,7 +14,9 @@ tags:
 
 # Summary
 ---
-Write a summary of the CTF challenge.
+This lab involves memory forensics analysis of a compromised Windows system at a financial institution using Volatility3. Investigation into the running processes revealed a suspicious `powershell.exe` process executing with a hidden window style, connecting to an external network resource via WebDAV and executing a remote DLL payload using `rundll32.exe`.
+
+Further analysis traced the parent process, identified the shared directory used for staging the payload, and mapped the technique to the appropriate MITRE ATT&CK sub-technique. The user account context was identified, and the malware family was attributed to `StrelaStealer`, an infostealer known for targeting email client credentials.
 
 # Scenario
 ---
