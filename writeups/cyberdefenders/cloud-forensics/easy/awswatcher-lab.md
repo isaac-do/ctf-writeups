@@ -4,6 +4,8 @@ tags:
   - cyberdefenders
   - cloud-forensics
   - jq
+  - cloudwatch
+  - cloudtrail
 ---
 # Lab Overview
 ---

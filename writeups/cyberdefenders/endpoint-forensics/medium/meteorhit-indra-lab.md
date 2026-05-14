@@ -2,6 +2,9 @@
 date: 2026-04-08
 tags:
   - cyberdefenders
+  - endpoint-forensics
+  - event-log-explorer
+  - registry-explorer
 ---
 # Lab Overview
 ---
